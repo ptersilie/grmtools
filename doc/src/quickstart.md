@@ -5,10 +5,11 @@ grmtools, which allows traditional `.y` files to be used mostly unchanged in
 Rust. This page is a short guide to get you up and running with this feature as
 quickly as possible.
 
-grmtools includes both a Yacc-style LR parser (`lrpar`) and a lex-style lexer
-(`lrlex`). The lexer breaks input up into individual lexemes and the parser
-checks to see if the lexemes conform to a grammar. As the parser executes, it
-can either create a generic parse tree, or execute user-specified Rust code.
+grmtools includes both a Yacc-style LR parser ([`lrpar`](lrpar.html)) and a
+lex-style lexer (`lrlex`). The lexer breaks input up into individual lexemes and
+the parser checks to see if the lexemes conform to a grammar. As the parser
+executes, it can either create a generic parse tree, or execute user-specified
+Rust code.
 
 
 ## A calculator evaluator
