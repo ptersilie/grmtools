@@ -213,4 +213,5 @@ fn main() {
 
 One of `lrpar`s unusual features is its advanced error recovery approach. With
 some simple annotations, and a bit of work to present information to the user,
-high quality reports can be given to the user when they make syntactic errors.
+[high quality reports can be given to the user when they make syntactic
+errors](errorrecovery.html).
