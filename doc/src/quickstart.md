@@ -6,7 +6,7 @@ Rust. This page is a short guide to get you up and running with this feature as
 quickly as possible.
 
 grmtools includes both a Yacc-style LR parser ([`lrpar`](lrpar.html)) and a
-lex-style lexer (`lrlex`). The lexer breaks input up into individual lexemes and
+lex-style lexer ([`lrlex`](lrlex.html)). The lexer breaks input up into individual lexemes and
 the parser checks to see if the lexemes conform to a grammar. As the parser
 executes, it can either create a generic parse tree, or execute user-specified
 Rust code.
@@ -144,7 +144,7 @@ to Yacc. The `$x` variables refer to the respective symbol in the production
 rule then an instance of the `%type` is stored in the `$x` variable; if the
 symbol is a lexeme then a string is stored instead.
 
-The third part is arbitrary Rust code which can be called by productions'
+The third part is arbitrary Rust code which can be called by productions’
 actions. In our case we have a simple function which converts integers as
 strings into integers as `u64`s: if the user provides an invalid number (e.g.
 one that is too big) an error will be printed.
