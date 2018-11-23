@@ -89,7 +89,7 @@ details of this are unimportant to us).
 
 Roughly speaking, each line after the `%%` line is a regular expression (we use
 the [`regex`](https://crates.io/crates/regex) crate), a space character, and a
-quoted lexeme type name. In other words, if the user gives us input such as `234`
+quoted lexeme type name. For example, if the user gives us input such as `234`
 we will create a single lexeme with a value (`234`) and a type (`INT`).
 
 The one exception is the final line: if a lexeme type name is replaced with ‘`;`’
